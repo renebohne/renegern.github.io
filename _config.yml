@@ -13,7 +13,7 @@ name:				         'René Gern'
 title:               'René Gern'
 tagline:             'Private Homepage'
 description:         'Eine Sammlung privater Notizen und Projekte'
-url:                 'renegern.github.io'
+url:                 'www.rene.gern.de'
 rss:                 rss feed url
 baseurl:             '/'
 baseurl_posts_img:   '/assets/images/posts/'
@@ -24,7 +24,7 @@ icon:                /assets/img/icon.png # /assets/img/icon.png [best 300px X 3
 
 author:
   name:           	 renegern
-  url:            	 'renegern.github.io'
+  url:            	 'www.rene-gern.de'
   facebook:          renebohne
   twitter:           renebohne
   
