@@ -6,11 +6,7 @@ layout: default
     <div class="section-backgroundImage">
 
       {% if page.image.feature %}
-        <img class="post-featuredImage" src="{{ page.image.feature | prepend: site.baseurl_featured_img }}" style="
-        {% if page.image.topPosition %}
-          top:{{ page.image.topPosition }};
-        {% endif %}
-        " alt="">
+        <img class="post-featuredImage is-loaded" src="{{ page.image.feature | prepend: site.baseurl_featured_img }}" alt="" {% if page.image.topPosition %} style="top:{{ page.image.topPosition }};" {% endif %} >
       {% endif %}
 
     </div>
@@ -97,4 +93,3 @@ layout: default
     {% endif %}
   </footer>
 </article>
-
