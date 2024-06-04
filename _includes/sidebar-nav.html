@@ -1,0 +1,28 @@
+<nav role="navigation" class="sidebar sidebar--right">
+  <a href="/" class="textLogo textLogo--white textLogo--sidebar">{{ site.name }}</a>
+  <ul class="sidebar-recentPosts">
+    <li><a href="about.html">Impressum</a></li>
+    <hr>
+    {% for post in site.posts offset:0 limit:10 %}
+      {% if post.title == page.title %}
+        <!-- exclude current post -->
+      {% else %}
+      <li>
+        {% if post.image.feature %}
+          <a href="{{ post.url }}" class="sidebar-recentPosts-image-wrapper">
+            <img src="{{ post.image.feature | prepend: site.baseurl_featured_img }}" style="" alt="">
+          </a>
+        {% endif %}
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        <div class="postMeta">
+          {% if post.categories contains 'announcements' %}
+          Ankündigung
+          {% else %}
+          {{ post.date | date_to_string }}
+          {% endif %}
+        </div>
+      </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</nav>

@@ -1,0 +1,42 @@
+
+# Syntax highlighting
+markdown:            kramdown
+highlighter:         rouge
+
+# Permalinks
+permalink:           /:title
+
+# Setup
+timezone:            Europe/Berlin # eg. Asia/Kathmandu
+locale:              de_de # eg. en_us
+name:				         'René Gern'
+title:               'René Gern'
+tagline:             'Private Homepage'
+description:         'Eine Sammlung privater Notizen und Projekte'
+url:                 'renegern.github.io'
+rss:                 rss feed url
+baseurl:             '/'
+baseurl_posts_img:   '/assets/images/posts/'
+baseurl_featured_img: '/assets/images/hero/'
+baseurl_featured_thumbnail: '/assets/images/thumbnail/'
+baseurl_javascripts: '/assets/javascripts/'
+icon:                /assets/img/icon.png # /assets/img/icon.png [best 300px X 300px]
+
+author:
+  name:           	 renegern
+  url:            	 'renegern.github.io'
+  facebook:          renebohne
+  twitter:           renebohne
+  
+# Server
+destination:      	 ./_site
+exclude:          	 [".editorconfig", ".gitignore", "bower.json", "composer.json", "CONTRIBUTING.md", "CNAME", "LICENSE", "Gruntfile.js", "package.json", "node_modules", "README.md", "sass", "haml"]
+port:             	 9001
+
+defaults:
+  -
+    scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: "default"
